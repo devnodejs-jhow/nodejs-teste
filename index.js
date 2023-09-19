@@ -40,6 +40,6 @@ app.get("/",(req, res) => {
 // Montar servidor 
 //14° Montar o servidor na porta desejada 
 
-	app.listen(3000, err => console.log(err));
+	app.listen(process.env.POST, err => console.log(err));
 
 
