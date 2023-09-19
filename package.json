@@ -1,4 +1,5 @@
 {
+  
   "name": "nodejs-app-test",
   "version": "1.0.0",
   "description": "Teste node js render deploy",
@@ -23,6 +24,10 @@
     "express": "^4.18.2",
     "mysql2": "^3.6.1",
     "sequelize": "^6.33.0"
+  },
+  "engines": {
+    "node": ">=12",
+    "node": ">=16.14"
   }
-  
+
 }
