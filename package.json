@@ -68,12 +68,5 @@
     
   "node": ">=16.14"
   
-  },
-  
-  "devDependencies": {
-  
-    
-  "nodemon": "^3.0.1"
-  
   }
 }
