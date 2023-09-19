@@ -6,7 +6,7 @@ const connection = new Sequelize(process.env.TABLE,process.env.ROOT,process.env.
     host: process.env.HOST,
     dialect: 'mysql'
 });
-
+//So para commitar
 module.exports = connection;
 
 
