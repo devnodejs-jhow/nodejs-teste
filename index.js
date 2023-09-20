@@ -34,12 +34,12 @@ app.use(bodyParser.json());//13° Criar uma rota url simples
 
 app.get("/",(req, res) => {
 
-	res.render("idex.js",req.query);
+	res.render("index");
 });
 
 // Montar servidor 
 //14° Montar o servidor na porta desejada 
 
-	app.listen(process.env.POST, err => console.log(err));
+	app.listen(process.env.PORT, err => console.log(err));
 
 
