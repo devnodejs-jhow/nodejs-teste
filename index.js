@@ -34,7 +34,7 @@ app.use(bodyParser.json());//13° Criar uma rota url simples
 
 app.get("/",(req, res) => {
 
-	res.send('O que vc quiser retornar ! kkk')
+	res.render("idex.js",req.query);
 });
 
 // Montar servidor 
