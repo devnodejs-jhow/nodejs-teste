@@ -5,6 +5,7 @@ const express = require("express");
 const app = express();
 const connection = require('./database/database')
 const bodyParser = require('body-parser')
+const cors = require('cors')
 const Pergunta = require('./database/Pergunta')
 
 console.log("valor do dotenv ==>",Key_database); 
@@ -14,7 +15,6 @@ console.log("valor do dotenv ==>",Key_database);
 connection
     .authenticate()
     .then(() => {
-        console.log("Conexão feita com o banco de dados!")
     })
     .catch((msgErro) => {
         console.log(msgErro);
@@ -22,7 +22,7 @@ connection
 
 // Configurar configuraÃ§oes de view engine e body-parser
 //12° Colocar configuraÃ§oes de view engine ejs e tbm do body-parser
-
+app.use(cors())
 
 // Estou dizendo para o Express usar o EJS como View engine
 app.set('view engine', 'ejs');
@@ -33,8 +33,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());//13° Criar uma rota url simples
 
 app.get("/",(req, res) => {
-
-	res.render("index");
+    console.log("foi acessado a rota !")
+    let nome = "Jesus Cristo" 
+	res.render("index",{
+        nome:nome
+    });
 });
 
 // Montar servidor 
