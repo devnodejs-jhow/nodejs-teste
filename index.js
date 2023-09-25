@@ -33,7 +33,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());//13° Criar uma rota url simples
 
 app.get("/",(req, res) => {
-    console.log("foi acessado a rota !")
     let nome = "Jesus Cristo" 
 	res.render("index",{
         nome:nome

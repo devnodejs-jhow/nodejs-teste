@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(227, 206, 206);
+}
+.container_main{
+    width: 100vw;
+    height: 40vh;
+}
+h1{
+    text-align: center;
+    font-size: 30pt;
+}
+.jesus{
+    position: absolute;
+    width: 100vw;
+    height: 40vh;
+    z-index: 3;
+}
+#img-jesus{
+    position: absolute;
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    margin-top: 6rem;
+}
+#footer{
+    width: 100vw;
+    height: 30vh;
+}
