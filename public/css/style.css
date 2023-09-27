@@ -30,3 +30,19 @@ h1{
     width: 100vw;
     text-align: center;
 }
+.container-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+#select-book{
+    width: 20vw;
+}
+#select-capitule{
+    width: 20vw;
+}
+p{
+    color: red;
+}
