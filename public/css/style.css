@@ -46,3 +46,13 @@ h1{
 p{
     color: red;
 }
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+#information{
+    color: green;
+    text-align: center;
+}
