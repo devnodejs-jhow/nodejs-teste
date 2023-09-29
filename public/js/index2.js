@@ -38,19 +38,6 @@ form_select.addEventListener("input", () => {
                 // console.log("Book elemento=>",element,"versos name", data.book.name);
             })
             list_outhors = data.book.author.split(",")
-            console.log(data);
-             p1.textContent = `Livro ${data.book.name} ` + list_outhors != 0 ? `Autores `:`autor ${data.book.author}`  
-            if(list_outhors != 0){
-                for (let i = 0; i < list_outhors.length; i++) {
-                    p1.textContent  += `${list_outhors[i]},`;
-
-                }
-                }
-            data.verses.forEach(element => {
-               index++
-               div_content.innerHTML += ` ${index} ${element.text}`
-
-            });
         })
     })
 
