@@ -1,3 +1,9 @@
+html*{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
 body{
     background-color: rgb(227, 206, 206);
 }
@@ -43,18 +49,45 @@ h1{
 #select-capitule{
     width: 20vw;
 }
+.text-temp{
+    color: rgb(80, 102, 228);
+    text-align: left;
+}
 p{
-    color: red;
+    text-align: center;
 }
 #content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+}
+#p-container{
+   margin-top: 3rem;
 }
 #information{
-    color: green;
+    color: black;
     text-align: center;
     width: 80vw;
-    border: solid;
+}
+.socials-rede{
+    width: 3rem;
+    height: 3rem;
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100vw;
+    height: 25vh;
+}
+footer{
+    width: 100vw;
+}
+
+#btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
