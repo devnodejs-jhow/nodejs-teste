@@ -2,20 +2,17 @@
 <body>
     <div class="container_body">
         <%-include('./partials/navbar')%>
-        <div class="container_main">
-            <div class="jesus">
-                <h1>Jesus</h1>
+        <div id="text">
+            <div>
+                <%-include('./partials/sidebar')%>
             </div>
-            <div id="img-jesus">
-                <img src="src/biblia.png" width="200" height="200" alt="">
+            <div>
+                <%-include('./partials/img_main')%>
+                <%-include('./partials/form_main')%>
+                <%-include('./partials/container_text')%>
             </div>
-        </div>
-        <%-include('./partials/form_main')%>
-        <div id="content">
-            <div id="p-container">
-                <div id="information">
-                    <p class="text-temp">""</p>
-                </div>
+            <div>
+                <%-include('./partials/sidebar')%>
             </div>
         </div>
         <%-include('./partials/footer')%>

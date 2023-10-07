@@ -1,0 +1,12 @@
+#text{
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+}
+.top-one{
+    width: 25vw;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
